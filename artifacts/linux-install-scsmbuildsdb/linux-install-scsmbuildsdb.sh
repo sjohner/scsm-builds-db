@@ -2,7 +2,7 @@
 
 #
 # Script to install Service Manager Builds Database webapp on Linux.
-# See https://github.com/sjohner/scsm-builds-database for more information about this project
+# See https://github.com/sjohner/scsm-builds-db for more information about this project
 #
 # NOTE: Intended for use by the Azure DevTest Lab artifact system.
 #
@@ -61,27 +61,27 @@ if [ -f /usr/bin/apt ] ; then
 
     # Cloning git repo which contains necessary files for SCSM Builds DB website
     $LOGCMD "Cloning git repo with following command:"
-    $LOGCMD "git clone https://github.com/sjohner/scsm-builds-database.git"
-    sudo git clone https://github.com/sjohner/scsm-builds-database.git
+    $LOGCMD "git clone https://github.com/sjohner/scsm-builds-db.git"
+    sudo git clone https://github.com/sjohner/scsm-builds-db.git
 
     # Copy sample create-database.sql and replace default password with user defined password
     $LOGCMD "Replacing default passwords in create-database.sql with user defined password"
-    sudo cp scsm-builds-database/create-database.sql.example scsm-builds-database/create-database.sql
-    sudo sed -i "s/P@ssw0rd/$PASSWORD/g" scsm-builds-database/create-database.sql
+    sudo cp scsm-builds-db/create-database.sql.example scsm-builds-db/create-database.sql
+    sudo sed -i "s/P@ssw0rd/$PASSWORD/g" scsm-builds-db/create-database.sql
 
     # Copy sample config.php and and replace default password with user defined password
     $LOGCMD "Replacing default passwords in config.php with user defined password"
-    sudo cp scsm-builds-database/config.php.example scsm-builds-database/config.php
-    sudo sed -i "s/P@ssw0rd/$PASSWORD/g" scsm-builds-database/config.php
+    sudo cp scsm-builds-db/config.php.example scsm-builds-db/config.php
+    sudo sed -i "s/P@ssw0rd/$PASSWORD/g" scsm-builds-db/config.php
 
     # Create SQL database and insert data
     $LOGCMD "Creating database by using create-database.sql included in webapp source:"
-    $LOGCMD "sudo mysql < scsm-builds-database/create-database.sql"
-    sudo mysql < scsm-builds-database/create-database.sql
+    $LOGCMD "sudo mysql < scsm-builds-db/create-database.sql"
+    sudo mysql < scsm-builds-db/create-database.sql
 
     # Copy files
     $LOGCMD "Copy webapp source files to /var/www/html/"
-    sudo cp scsm-builds-database/config.php scsm-builds-database/index.php scsm-builds-database/getbuilds.php /var/www/html/
+    sudo cp scsm-builds-db/config.php scsm-builds-db/index.php scsm-builds-db/getbuilds.php /var/www/html/
 
     # Restarting apache to enable php modules
     $LOGCMD "Restarting apache web server with following command:"
