@@ -8,7 +8,7 @@
         "Linux",
         "Database"
     ],
-    "iconUri": "https://raw.githubusercontent.com/sjohner/Azure-DevTestLabs-Artifacts/master/linux-install-mariadb/mariadbartifact.png",
+    "iconUri": "https://raw.githubusercontent.com/sjohner/scsm-builds-db/master/artifacts/linux-install-mariadb/mariadbartifact.png",
     "targetOsType": "Linux",
     "parameters": {
         "password": {
