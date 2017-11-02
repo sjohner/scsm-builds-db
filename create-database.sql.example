@@ -11,11 +11,11 @@ USE servicemanager;
 
 -- Create table and insert data from text file
 CREATE TABLE products (id MEDIUMINT NOT NULL AUTO_INCREMENT, productname VARCHAR(50), lifecyclestartdate DATE, mainstreamenddate DATE, extendedenddate DATE, notes VARCHAR(200), PRIMARY KEY (id));
-LOAD DATA LOCAL INFILE 'scsm-builds-database/scsmproducts.txt' INTO TABLE products LINES TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE 'scsm-builds-db/scsmproducts.txt' INTO TABLE products LINES TERMINATED BY '\n';
 
 -- Create table and insert data from text file
 CREATE TABLE builds (id MEDIUMINT NOT NULL AUTO_INCREMENT, buildnumber VARCHAR(20), kbarticle VARCHAR(100), kbarticleurl VARCHAR(100), displayname VARCHAR(100), notes VARCHAR(200), additionalinfourl VARCHAR(200), product MEDIUMINT NOT NULL, PRIMARY KEY (id));
-LOAD DATA LOCAL INFILE 'scsm-builds-database/scsmbuilds.txt' INTO TABLE builds LINES TERMINATED BY '\n' (buildnumber, kbarticle, kbarticleurl, displayname, notes, additionalinfourl, product) SET ID = NULL;
+LOAD DATA LOCAL INFILE 'scsm-builds-db/scsmbuilds.txt' INTO TABLE builds LINES TERMINATED BY '\n' (buildnumber, kbarticle, kbarticleurl, displayname, notes, additionalinfourl, product) SET ID = NULL;
 
 -- Create user and grant all privileges for all servicemanager db tables
 -- Password should be changed (e.g. by using sed -i "s/P@ssw0rd/<YOURPASSWORD>/g" SCSM-VersionDatabase/create-database.sql)
