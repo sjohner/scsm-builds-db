@@ -1,0 +1,119 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "newVMName": {
+      "type": "string"
+    },
+    "labName": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string",
+      "defaultValue": "Standard_DS1_v2"
+    },
+    "userName": {
+      "type": "string"
+    },
+    "password": {
+      "type": "securestring"
+    },
+    "Apt-Get.packages": {
+      "type": "string",
+      "defaultValue": "apache2 libapache2-mod-php php-mysql"
+    },
+    "Apt-Get.update": {
+      "type": "string",
+      "defaultValue": "true"
+    },
+    "Apt-Get.options": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "MariaDB.password": {
+      "type": "string",
+      "defaultValue": "21TaMhtv4iLmEQWz"
+    },
+    "Service_Manager_Builds_Database.password": {
+      "type": "string",
+      "defaultValue": "21TaMhtv4iLmEQWz"
+    }
+  },
+  "variables": {
+    "labSubnetName": "[concat(variables('labVirtualNetworkName'), 'Subnet')]",
+    "labVirtualNetworkId": "[resourceId('Microsoft.DevTestLab/labs/virtualnetworks', parameters('labName'), variables('labVirtualNetworkName'))]",
+    "labVirtualNetworkName": "[concat('Dtl', parameters('labName'))]",
+    "vmId": "[resourceId ('Microsoft.DevTestLab/labs/virtualmachines', parameters('labName'), parameters('newVMName'))]",
+    "vmName": "[concat(parameters('labName'), '/', parameters('newVMName'))]"
+  },
+  "resources": [
+    {
+      "apiVersion": "2017-04-26-preview",
+      "type": "Microsoft.DevTestLab/labs/virtualmachines",
+      "name": "[variables('vmName')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "labVirtualNetworkId": "[variables('labVirtualNetworkId')]",
+        "notes": "Ubuntu Server 16.04 LTS",
+        "galleryImageReference": {
+          "offer": "UbuntuServer",
+          "publisher": "Canonical",
+          "sku": "16.04-LTS",
+          "osType": "Linux",
+          "version": "latest"
+        },
+        "size": "[parameters('size')]",
+        "userName": "[parameters('userName')]",
+        "password": "[parameters('password')]",
+        "isAuthenticationWithSshKey": false,
+        "artifacts": [
+          {
+            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('labName'), 'public repo', 'linux-apt-package')]",
+            "parameters": [
+              {
+                "name": "packages",
+                "value": "[parameters('Apt-Get.packages')]"
+              },
+              {
+                "name": "update",
+                "value": "[parameters('Apt-Get.update')]"
+              },
+              {
+                "name": "options",
+                "value": "[parameters('Apt-Get.options')]"
+              }
+            ]
+          },
+          {
+            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('labName'), 'privaterepo274', 'linux-install-mariadb')]",
+            "parameters": [
+              {
+                "name": "password",
+                "value": "[parameters('MariaDB.password')]"
+              }
+            ]
+          },
+          {
+            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('labName'), 'privaterepo274', 'linux-install-scsmbuildsdb')]",
+            "parameters": [
+              {
+                "name": "password",
+                "value": "[parameters('Service_Manager_Builds_Database.password')]"
+              }
+            ]
+          }
+        ],
+        "labSubnetName": "[variables('labSubnetName')]",
+        "disallowPublicIpAddress": false,
+        "storageType": "Premium",
+        "allowClaim": true
+      }
+    }
+  ],
+  "outputs": {
+    "labVMId": {
+      "type": "string",
+      "value": "[variables('vmId')]"
+    }
+  }
+}

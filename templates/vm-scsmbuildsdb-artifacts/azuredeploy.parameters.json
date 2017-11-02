@@ -1,0 +1,24 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+        "newVMName": {
+            "value": "GEN-UNIQUE-8"
+          },
+          "labName": {
+            "value": "GEN-UNIQUE"
+          },
+          "userName": {
+            "value": "GEN-UNIQUE"
+          },
+          "password": {
+            "value": "GEN-PASSWORD"
+          },
+          "MariaDB.password": {
+            "value": "GEN-PASSWORD"
+          },
+          "Service_Manager_Builds_Database.password": {
+            "value": "GEN-PASSWORD"
+          }
+	}
+}

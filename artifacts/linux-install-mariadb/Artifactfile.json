@@ -1,0 +1,23 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "MariaDB",
+    "publisher": "Stefan Johner",
+    "description": "Install MariaDB database on Linux",
+    "tags": [
+        "MariaDB",
+        "Linux",
+        "Database"
+    ],
+    "iconUri": "https://raw.githubusercontent.com/sjohner/Azure-DevTestLabs-Artifacts/master/linux-install-mariadb/mariadbartifact.png",
+    "targetOsType": "Linux",
+    "parameters": {
+        "password": {
+            "type": "string",
+            "displayName": "MariaDB root password",
+            "description": "The MariaDB root password"
+        }
+    },
+    "runCommand": {
+        "commandToExecute": "[concat('sh linux-install-mariadb.sh ', '-p ', parameters('password'))]"
+    }
+}

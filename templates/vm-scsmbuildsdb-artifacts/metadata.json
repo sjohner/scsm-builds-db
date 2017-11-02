@@ -1,0 +1,5 @@
+{
+  "itemDisplayName": "SCSM Builds DB VM.",
+  "description": "Create 1 Ubuntu VM with SCSM Builds DB app running",
+  "summary": "This template creates one Ubuntu Linux VM with Apache and PHP configured and SCSM Builds DB source installed."
+}

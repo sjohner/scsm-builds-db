@@ -1,0 +1,12 @@
+<?php
+
+# Define database connection settings
+# Make sure you change filename to config.php and change the sample password
+
+define (DB_USER, "scsmdb");
+# Password should be changed (e.g. by using sed -i "s/P@ssw0rd/<YOURPASSWORD>/g" SCSM-VersionDatabase/config.php)
+define (DB_PASSWORD, "P@ssw0rd");
+define (DB_DATABASE, "servicemanager");
+define (DB_HOST, "localhost");
+
+?>

@@ -1,0 +1,50 @@
+7.0.5813.0	\N	\N	System Center Service Manager 2010 Release Candidate	\N	\N	1
+7.0.5826.0	\N	\N	System Center Service Manager 2010	\N	\N	1
+7.0.5826.859	983572	http://support.microsoft.com/kb/983572	Cumulative Update 1 for System Center Service Manager 2010	\N	\N	1
+7.0.5826.881	2193861	http://support.microsoft.com/kb/2193861	Cumulative Update 2 for System Center Service Manager 2010	\N	\N	1
+7.0.5826.886	2390520	http://support.microsoft.com/kb/2390520	Cumulative Update 3 for System Center Service Manager 2010	\N	\N	1
+7.0.6545.0	\N	\N	System Center Service Manager 2010 Service Pack 1 Release Candidate	\N	\N	2
+7.0.6555.0	\N	\N	System Center Service Manager 2010 Service Pack 1	\N	\N	2
+7.0.6555.101	2484853	http://support.microsoft.com/kb/2484853	Cumulative Update 1 for System Center Service Manager 2010 Service Pack 1	\N	\N	2
+7.0.6555.110	2538810	http://support.microsoft.com/kb/2538810	Hotfix for Cumulative Update 1 for System Center Service Manager 2010 Service Pack 1	\N	\N	2
+7.0.6555.115	2542118	http://support.microsoft.com/kb/2542118	Cumulative Update 2 for System Center Service Manager 2010 Service Pack 1	\N	\N	2
+7.0.6555.116	2561430	http://support.microsoft.com/kb/2561430	Hotfix package for System Center Service Manager 2010 Service Pack 1	Requires Cumulative Update 2	\N	2
+7.0.6555.118	2561415	http://support.microsoft.com/kb/2561415	Hotfix package for System Center Service Manager 2010 Service Pack 1	Active Directory Connector does not synchronize new updates after you switch domain controllers (Requires Cumulative Update 2. Not cumulative — does not include Hotfix 2250444)	\N	2
+7.0.6555.128	2588492	http://support.microsoft.com/kb/2588492	Cumulative Update 3 for System Center Service Manager 2010 Service Pack 1	\N	\N	2
+7.0.6555.131	2719826	http://support.microsoft.com/kb/2719826	Cumulative Update 4 for System Center Service Manager 2010 Service Pack 1	\N	\N	2
+7.5.1088.276	\N	\N	System Center 2012 Service Manager Community Technology Preview 2	\N	\N	3
+7.5.1354.0	\N	\N	System Center 2012 Service Manager Beta	\N	\N	3
+7.5.1464.0	\N	\N	System Center 2012 Service Manager Release Candidate	\N	\N	3
+7.5.1561.0	\N	\N	System Center 2012 Service Manager	\N	\N	3
+7.5.1561.106	2719827	http://support.microsoft.com/kb/2706783	Update Rollup 2 for System Center 2012 Service Manager	\N	\N	3
+7.5.1561.112	2750615	http://support.microsoft.com/kb/2750615	Update Rollup 3 for System Center 2012 Service Manager	\N	\N	3
+7.5.1561.116	2750615	http://support.microsoft.com/kb/2750615	Re-Release of Update Rollup 3 for System Center 2012 Service Manager	\N	\N	3
+7.5.2053.0	\N	\N	System Center 2012 Service Pack 1 Service Manager Community Technology Preview 2	Announcing Availability of System Center 2012 Service Pack 1 Community Technology Preview 2 (CTP2)	http://blogs.technet.com/b/servicemanager/archive/2012/06/15/announcing-the-availability-of-system-center-2012-sp1-community-technology-preview-2.aspx	4
+7.5.2205.0	\N	\N	System Center 2012 Service Pack 1 Service Manager Beta	System Center 2012 Service Pack 1 Beta Now Available for Download	http://blogs.technet.com/b/servicemanager/archive/2012/09/11/system-center-2012-service-pack-1-beta-now-available-for-download.aspx	4
+7.5.2905.0	\N	\N	System Center 2012 Service Pack 1 Service Manager	\N	\N	4
+7.5.2905.125	2802159	http://support.microsoft.com/kb/2802159/en-us	Update Rollup 2 for System Center 2012 Service Pack 1 Service Manager	\N	\N	4
+7.5.2905.150	2879276	http://support.microsoft.com/kb/2879276/en-us	Update Rollup 4 for System Center 2012 Service Pack 1 Service Manager	\N	\N	4
+7.5.2905.158	2887775	http://support.microsoft.com/kb/2887775/en-us	Re-Release of Update Rollup 4 for System Center 2012 Service Pack 1 Service Manager	\N	\N	4
+7.5.2905.179	2904726	http://support.microsoft.com/kb/2904726	Update Rollup 6 for System Center 2012 Service Pack 1 Service Manager	\N	\N	4
+7.5.2905.188	2970642	https://www.microsoft.com/en-us/download/details.aspx?id=44071	Update for System Center 2012 Service Pack 1 Service Manager	Fixes SCCM connector version format errors	\N	4
+7.5.3046.276	\N	\N	System Center 2012 R2 Preview Service Manager	\N	\N	5
+7.5.3079.0	\N	\N	System Center 2012 R2 Service Manager	\N	\N	5
+7.5.3079.61	2904710	http://support.microsoft.com/kb/2904710	Update Rollup 2 for System Center 2012 R2 Service Manager	\N	\N	5
+7.5.3079.148	2962041	http://support.microsoft.com/kb/2962041	Update Rollup 3 for System Center 2012 R2 Service Manager	\N	\N	5
+7.5.3079.236	2989601	http://support.microsoft.com/kb/2989601	Update Rollup 4 for System Center 2012 R2 Service Manager	\N	\N	5
+7.5.3079.315	3009517	http://support.microsoft.com/kb/3009517	Update Rollup 5 for System Center 2012 R2 Service Manager	\N	\N	5
+7.5.3079.367	3039363	https://support.microsoft.com/en-us/kb/3039363	Update Rollup 6 for System Center 2012 R2 Service Manager	\N	\N	5
+7.5.3079.402	3039363	https://support.microsoft.com/en-us/kb/3039363	Hotfix for Update Rollup 6 for System Center 2012 R2 Service Manager	\N	\N	5
+7.5.3079.442	3063263	https://support.microsoft.com/en-us/kb/3063263	Update Rollup 7 for System Cent er 2012 R2 Service Manager	\N	\N	5
+7.5.3079.504	3063263	https://support.microsoft.com/en-us/kb/3063263	Hotfix for Update Rollup 7 for System Center 2012 R2 Service Manager	\N	\N	5
+7.5.3079.507	3096383	https://support.microsoft.com/en-us/kb/3096383	Update Rollup 8 for System Center 2012 R2 Service Manager	Update Rollup 8 includes ONLY HTML Self-Service Portal	\N	5
+7.5.3079.523	3124091	https://support.microsoft.com/en-us/kb/3124091	Hotfix for System Center 2012 R2 Service Manager Self-Service Portal	\N	\N	5
+7.5.3079.548	3134286	https://support.microsoft.com/en-us/kb/3134286	Hotfix for System Center 2012 R2 Service Manager Self-Service Portal	\N	\N	5
+7.5.3079.571	3129780	https://support.microsoft.com/en-us/kb/3129780	Update Rollup 9 for System Center 2012 R2 Service Manager	"This update was withdrawn, not available for download"	\N	5
+7.5.3079.572	3144617	https://support.microsoft.com/en-us/kb/3144617	Hotfix for System Center 2012 R2 Service Manager Self-Service Portal	\N	\N	5
+7.5.3079.601	3129780	https://support.microsoft.com/en-us/kb/3129780	Re-Release of Update Rollup 9 for System Center 2012 R2 Service Manager	"This update was withdrawn, not available for download"	\N	5
+7.5.3079.607	3129780	https://support.microsoft.com/en-us/kb/3129780	Re-Re-Release of Update Rollup 9 for System Center 2012 R2 Service Manager	This Update Rollup does not include Update Rollup 8 - HTML Self-Service Portal	\N	5
+7.5.7217.0	\N	\N	System Center 2016 Service Manager Technical Preview 4	\N	\N	6
+7.5.7314.0	\N	\N	System Center 2016 Service Manager Technical Preview 5	\N	\N	6
+7.5.7487.0	\N	\N	System Center 2016 Service Manager	\N	\N	6
+7.5.7487.37	3209594	https://support.microsoft.com/en-us/help/3209594/update-rollup-2-for-system-center-2016-service-manager	Update Rollup 2 for System Center 2016 Service Manager	"Contains features/fixes for HTML Portal and Exchange Connector only, main version was not changed"	\N	6
