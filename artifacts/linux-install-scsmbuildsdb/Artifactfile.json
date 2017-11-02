@@ -8,7 +8,7 @@
         "Service Manager",
         "Database"
     ],
-    "iconUri": "https://raw.githubusercontent.com/sjohner/Azure-DevTestLabs-Artifacts/master/linux-install-scsmbuildsdb/databaseartifact.png",
+    "iconUri": "https://raw.githubusercontent.com/sjohner/scsm-builds-db/master/artifacts/linux-install-scsmbuildsdb/databaseartifact.png",
     "targetOsType": "Linux",
     "parameters": {
         "password": {
