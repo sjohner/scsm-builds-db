@@ -49,7 +49,7 @@
         <div class="container">
 
             <br />
-            <h2 align="center">Search for Microsoft System Center Service Manager Build Number and get corresponding version - Experts Live 2017</h2>
+            <h2 align="center">Search for Microsoft System Center Service Manager Build Number and get corresponding version</h2>
             <br />
 
             <div class="form-group">
