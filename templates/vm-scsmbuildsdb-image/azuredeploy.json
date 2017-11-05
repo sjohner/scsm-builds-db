@@ -23,6 +23,9 @@
     },
     "customImageId": {
         "type": "string"
+    },
+    "notes": {
+        "type": "string"
     }
   },
   "variables": {
@@ -44,7 +47,7 @@
       },
       "properties": {
         "labVirtualNetworkId": "[variables('labVirtualNetworkId')]",
-        "notes": "SCSMBuildsDB-7fef21f0",
+        "notes": "[parameters('notes')]",
         "customImageId": "[parameters('customImageId')]",
         "size": "[parameters('size')]",
         "userName": "[parameters('userName')]",
