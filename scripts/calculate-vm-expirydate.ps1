@@ -4,7 +4,7 @@ Param(
 )
 
 # Calculate VM expiry date
-Write-Host "Lifetime: $($env:vmLifetime)"
+Write-Host $env:vmLifetime
 $today = Get-Date -Hour 0 -Minute 00 -Second 00
 $expirydate = $today.AddDays($vmLifetimeDays)
 
