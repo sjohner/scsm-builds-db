@@ -1,6 +1,8 @@
 # Service Manager Builds Database
 Service Manager Builds Database is a simple web app where Microsoft System Center Service Manager build number can be related to a specific version.
 
+This sample application is primarly used for Azure DevTest Labs demos and therefor contains corresponding ARM templates as well as artifacts. 
+
 ## Authors
 * **Stefan Johner** - *Initial work* - [sjohner](https://github.com/sjohner)
 
