@@ -1,0 +1,5 @@
+{
+  "itemDisplayName": "SCSM Builds DB VM - Image",
+  "description": "Create an Ubuntu VM with SCSM Builds DB app running from base image",
+  "summary": "This template creates one Ubuntu Linux VM from a given SCSM Builds DB base image"
+}
