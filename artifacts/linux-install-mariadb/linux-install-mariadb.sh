@@ -85,6 +85,10 @@ if [ -f /usr/bin/yum ] ; then
     $LOGCMD "yum install mariadb-server mariadb"
     yum -y install mariadb-server mariadb
 
+    # Start MariaDB
+    $LOGCMD "Starting MariaDB"
+    service mariadb start
+
     # Change root password
     $LOGCMD "Updating root password"
     mysqladmin password "$PASSWORD"
