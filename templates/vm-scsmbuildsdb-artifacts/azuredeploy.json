@@ -85,7 +85,7 @@
             ]
           },
           {
-            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('labName'), 'privaterepo274', 'linux-install-mariadb')]",
+            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('labName'), 'privaterepo508', 'linux-install-mariadb')]",
             "parameters": [
               {
                 "name": "password",
@@ -94,7 +94,7 @@
             ]
           },
           {
-            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('labName'), 'privaterepo274', 'linux-install-scsmbuildsdb')]",
+            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('labName'), 'privaterepo508', 'linux-install-scsmbuildsdb')]",
             "parameters": [
               {
                 "name": "password",
