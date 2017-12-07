@@ -6,6 +6,7 @@
     "tags": [
         "MariaDB",
         "Linux",
+        "Ubuntu",
         "Database"
     ],
     "iconUri": "https://raw.githubusercontent.com/sjohner/scsm-builds-db/master/artifacts/linux-install-mariadb/mariadbartifact.png",
