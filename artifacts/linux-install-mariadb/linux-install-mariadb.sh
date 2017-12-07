@@ -47,7 +47,7 @@ $LOGCMD "Checking for package manager (apt/yum)"
 
 if [ -f /usr/bin/apt ] ; then
 
-    $LOGCMD "apt package manager present"
+    $LOGCMD "Using apt package manager"
 
     # Configuring debconf for unattended installation and setting the given root password
     $LOGCMD "Setting DEBIAN_FRONTEND to 'noninteractive' for unattended installation"
@@ -77,9 +77,17 @@ if [ -f /usr/bin/apt ] ; then
 fi
 
 if [ -f /usr/bin/yum ] ; then
+
     $LOGCMD "Using YUM package manager"
 
-    # TODO: Test and implement for non-apt based systems
+    # Installl MariaDB packages
+    $LOGCMD "Installing MariaDB using the following command:"
+    $LOGCMD "yum install mariadb-server mariadb"
+    yum -y install mariadb-server mariadb
+
+    # Change root password
+    $LOGCMD "Updating root password"
+    mysqladmin password "$PASSWORD"
 
 fi
 

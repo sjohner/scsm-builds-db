@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
     "title": "MariaDB",
     "publisher": "Stefan Johner",
-    "description": "Install MariaDB database on Linux",
+    "description": "Install MariaDB on Linux",
     "tags": [
         "MariaDB",
         "Linux",
@@ -12,9 +12,9 @@
     "targetOsType": "Linux",
     "parameters": {
         "password": {
-            "type": "string",
+            "type": "securestring",
             "displayName": "MariaDB root password",
-            "description": "The MariaDB root password"
+            "description": "The root password which is set for the newly created MariaDB instance"
         }
     },
     "runCommand": {
