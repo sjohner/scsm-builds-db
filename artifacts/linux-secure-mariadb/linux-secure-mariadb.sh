@@ -54,9 +54,10 @@ mysql -e "DELETE FROM mysql.user WHERE User='';"
 $LOGCMD "Disallowing root login remotely"
 mysql -e "DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1');"
 
-# Remove test database and access to it
+# Remove test database and access to it. Use IF EXISTS since sometimes
+# test database is not present (e.g. Debian based systems) 
 $LOGCMD "Removing test database and access to it"
-mysql -e "DROP DATABASE test;"
+mysql -e "DROP DATABASE IF EXISTS test;"
 mysql -e "DELETE FROM mysql.db WHERE Db='test' OR Db='test\\_%';"
 
 # Reload privilege tables
