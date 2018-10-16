@@ -1,5 +1,6 @@
 {
   "itemDisplayName": "SCSM Builds DB VM - Artifacts",
   "description": "Create an Ubuntu VM with SCSM Builds DB app running from artifacts",
+  "githubUsername": "sjohner",
   "summary": "This template creates one Ubuntu Linux VM with Apache and PHP configured and SCSM Builds DB source installed from artifacts"
 }
