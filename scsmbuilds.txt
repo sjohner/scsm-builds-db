@@ -48,3 +48,4 @@
 7.5.7314.0	\N	\N	System Center 2016 Service Manager Technical Preview 5	\N	\N	6
 7.5.7487.0	\N	\N	System Center 2016 Service Manager	\N	\N	6
 7.5.7487.37	3209594	https://support.microsoft.com/en-us/help/3209594/update-rollup-2-for-system-center-2016-service-manager	Update Rollup 2 for System Center 2016 Service Manager	"Contains features/fixes for HTML Portal and Exchange Connector only, main version was not changed"	\N	6
+7.5.7487.37	3209594	https://www.microsoft.com/en-in/download/details.aspx?id=55260	Update Rollup 3 for System Center 2016 Service Manager	"Service Manager 2016 now supports Microsoft SQL Server 2016 SP1"	\N	6
